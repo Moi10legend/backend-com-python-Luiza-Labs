@@ -37,3 +37,4 @@ A escolha do tipo de API vem da necessidade específica do projeto, recursos dis
 
 ## Verbos HTTP em APIs RestFul
 GET é para leitura, POST para criação, PUT/PATCH para atualização e DELETE para remoção.
+O PUT vai substituir completamente um recurso existente no servidor e o PATCH faz uma atualização parcial, atualizando apenas um campo ou alguns recursos.
