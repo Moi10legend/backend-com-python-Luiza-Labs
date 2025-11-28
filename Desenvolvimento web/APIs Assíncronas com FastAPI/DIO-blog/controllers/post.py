@@ -42,6 +42,6 @@ def read_posts(response: Response,
 
 @router.get("/{framework}", response_model=list[PostOut])  #Recebendo um atributo via path
 def read_framework_posts(framework: str):
-    return {"Posts": [{"título": f"Criando uma aplicação com {framework}", "data": datetime.now(UTC)}, 
-                      {"título": f"Internacionalizando uma app {framework}"},
-                      {"título": f"Mais um {framework}"}]}
+    return [{"título": f"Criando uma aplicação com {framework}", "data": datetime.now(UTC)}, 
+                      {"título": f"Internacionalizando uma app {framework}", "data": datetime.now(UTC)},
+                      {"título": f"Mais um {framework}", "data": datetime.now(UTC)}]
