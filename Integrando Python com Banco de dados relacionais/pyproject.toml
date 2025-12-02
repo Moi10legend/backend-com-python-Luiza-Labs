@@ -1,0 +1,17 @@
+[project]
+name = "integrando_python_com_banco_de_dados_relacionais"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Moi10legend",email = "moisesflopesf@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy (>=2.0.44,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
