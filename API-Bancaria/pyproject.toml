@@ -1,0 +1,20 @@
+[project]
+name = "api-bancaria"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Moi10legend",email = "moisesflopesf@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard] (>=0.123.5,<0.124.0)",
+    "sqlmodel (>=0.0.27,<0.0.28)",
+    "aiosqlite (>=0.21.0,<0.22.0)",
+    "tzdata (>=2025.2,<2026.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
