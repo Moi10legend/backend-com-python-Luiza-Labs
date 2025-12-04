@@ -8,6 +8,7 @@ if TYPE_CHECKING:
 class Account(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     name: str = Field(index=True)
+    password: str
     balance: Decimal | None = Field(default=0, decimal_places=2)
     active: bool | None = Field(default=True)
     transaction: list["Transaction"] = Relationship(back_populates="account", cascade_delete=True)

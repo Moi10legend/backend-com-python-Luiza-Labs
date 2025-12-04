@@ -1,73 +1,45 @@
-# ============================
-# ⬇️ Python / FastAPI / SQLModel
-# ============================
-
-# Bytecode
+# --- Byte-compiled / Otimizações do Python ---
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
-# Pastas de build
-build/
+# --- Ambientes Virtuais (Venvs) ---
+# Nunca suba a pasta onde as bibliotecas estão instaladas
+venv/
+.venv/
+env/
+.env/
+
+# --- Variáveis de Ambiente e Segredos (CRÍTICO) ---
+# Impede que suas senhas e SECRET_KEY subam para o GitHub
+.env
+.env.prod
+.env.dev
+.env.test
+
+# --- Banco de Dados ---
+# O banco SQLite é um arquivo binário local, não deve ir para o repo
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# --- Distribuição / Instalação ---
 dist/
+build/
 *.egg-info/
 
-# Banco de dados local
-*.db
-*.sqlite3
-
-# Arquivos de migração (caso use Alembic)
-alembic/versions/*.pyc
-alembic/versions/__pycache__/
-# Caso queira ignorar TODAS as versões (exceto estrutura)
-# alembic/versions/
-
-# Ambiente virtual
-venv/
-.env/
-.env.bak
-.venv/
-
-# Configurações sensíveis
-.env.prod
-.env.local
-*.env
-
-# Arquivos de logs
-*.log
-logs/
-uvicorn.log
-
-# Cache de IDE
+# --- IDEs e Editores (Configurações locais da sua máquina) ---
 .vscode/
-.vs/
 .idea/
+*.swp
 
-# Pytest
+# --- Logs e Testes ---
+*.log
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Cache do mypy
-.mypy_cache/
-
-# Cache do Ruff / pylint
-ruff_cache/
-.pylint.d/
-
-# Arquivos temporários
-*.tmp
-*.swp
-*.swo
-
-# Docker
-# (se você gerar imagens ou volumes locais)
-docker-compose.override.yml
-*.pid
-
-# Jupyter notebooks
-.ipynb_checkpoints/
-
-# OSX / Windows itens inúteis
+# --- Mac OS / Windows ---
 .DS_Store
 Thumbs.db
